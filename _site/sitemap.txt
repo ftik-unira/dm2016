@@ -1,0 +1,14 @@
+
+http://ftik-unira.github.io/dm2016/atom.xml
+http://ftik-unira.github.io/dm2016/home
+http://ftik-unira.github.io/dm2016/homeworks
+http://ftik-unira.github.io/dm2016/
+http://ftik-unira.github.io/dm2016/projects
+http://ftik-unira.github.io/dm2016/resources
+http://ftik-unira.github.io/dm2016/rss.xml
+http://ftik-unira.github.io/dm2016/schedule
+http://ftik-unira.github.io/dm2016/sitemap.txt
+http://ftik-unira.github.io/dm2016/slides
+http://ftik-unira.github.io/dm2016/syllabus
+
+http://ftik-unira.github.io/dm2016/lessons/2011/12/29/jekyll-introduction
