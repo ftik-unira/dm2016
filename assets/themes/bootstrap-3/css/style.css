@@ -1,4 +1,4 @@
- @import "http://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+ @import "http://fonts.googleapis.com/css?family=Open Sans:300,400,700";
 .rwd-table {
   margin: 1em 0;
   min-width: 300px;
@@ -80,4 +80,234 @@ h1 {
 }
 .rwd-table th, .rwd-table td:before {
   color: #dd5;
+}
+
+
+.projects {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-item {
+  display: block;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 2px;
+  background: white;
+  box-shadow: 0 2px 1px rgba(170, 170, 170, 0.25);
+}
+
+.project-name {
+  font-weight: 400;
+}
+
+.list .project-item {
+  position: relative;
+  padding: 0;
+  font-size: 14px;
+  line-height: 40px;
+}
+.list .project-item .pull-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media screen and (max-width: 800px) {
+  .list .project-item .stage:not(.active) {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .list .project-item .project-progress-bg {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .list .project-item .pull-right {
+    position: static;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+}
+.list .project-country,
+.list .project-progress,
+.list .project-completes,
+.list .project-end-date {
+  color: #A1A1A4;
+}
+.list .project-country,
+.list .project-completes,
+.list .project-end-date,
+.list .project-name,
+.list .project-stage {
+  margin: 0 10px;
+}
+.list .project-country {
+  margin-right: 0;
+}
+.list .project-end-date,
+.list .project-completes,
+.list .project-country,
+.list .project-name {
+  vertical-align: middle;
+}
+.list .project-end-date {
+  display: inline-block;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.project-stage .stage {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 2px;
+  background: #f2f2f2;
+  text-indent: -9999px;
+  color: transparent;
+  line-height: 16px;
+}
+.project-stage .stage.active {
+  background: #A1A1A4;
+}
+
+.list .list-only {
+  display: auto;
+}
+.list .grid-only {
+  display: none !important;
+}
+
+.grid .grid-only {
+  display: auto;
+}
+.grid .list-only {
+  display: none !important;
+}
+
+.grid .project-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 200px;
+  width: 250px;
+  margin: 10px;
+}
+@media screen and (max-width: 600px) {
+  .grid .project-item {
+    display: block;
+    width: auto;
+    height: 150px;
+    margin: 10px auto;
+  }
+}
+.grid .project-name {
+  display: block;
+  max-width: 80%;
+  font-size: 16px;
+  line-height: 20px;
+}
+.grid .project-country {
+  font-size: 11px;
+  line-height: 16px;
+}
+.grid .project-country,
+.grid .project-end-date {
+  color: #A1A1A4;
+}
+.grid .project-end-date:before {
+  /*content: 'Ends\00a0';*/
+}
+.grid .project-end-date.ended:before {
+  /*content: 'Ended\00a0';*/
+}
+.grid .project-progress {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+}
+.grid .project-progress-bg {
+  width: 40%;
+  display: block;
+}
+@media screen and (max-width: 200px) {
+  .grid .project-progress-bg {
+    display: none;
+  }
+}
+.grid .project-progress-labels {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  line-height: 40px;
+}
+@media screen and (max-width: 200px) {
+  .grid .project-progress-labels {
+    right: auto;
+    left: 10px;
+  }
+}
+.grid .project-progress-label {
+  line-height: 21px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.grid .project-completes {
+  line-height: 21px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+.grid .project-stage {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.grid .project-stage .stage {
+  display: none;
+}
+.grid .project-stage .active {
+  display: block;
+}
+.grid .project-end-date {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.project-progress-label {
+  vertical-align: middle;
+  margin: 0 10px;
+  color: #8DC63F;
+}
+
+.project-progress-bg {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.project-progress-fg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  background: #8DC63F;
 }
